@@ -1,3 +1,6 @@
+$("body").on('click','[data-stopPropagation]',function (e) {
+    e.stopPropagation();
+});
 $('#translate-button').click(function() {
     var btn = $(this);
     // btn.button('loading');

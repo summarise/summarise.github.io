@@ -36,12 +36,12 @@
             <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><font color="white">Choose one sample here.</font></a>
 
-    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 60px, 0px);">
+    <div class="dropdown-menu" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(0px, 60px, 0px);" data-stopPropagation='true'>
 
   
       <div class="custom-control custom-radio">
       <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input" checked="">
-      <label class="custom-control-label" for="customRadio1">Sample 1</label>
+      <label class="custom-control-label" for="customRadio1" >Sample 1</label>
     </div>
     <div class="custom-control custom-radio">
       <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
@@ -64,7 +64,7 @@
 <div class="container">
 <div class="row">
             <div class="col col-12 col-md-12">
-                <button type="button" class="btn btn-primary" id="translate-button">Summarise</button>
+                <button type="button" class="btn btn-primary" id="translate-button">Summarize</button>
                 </div>
         </div>
 </div>
@@ -72,18 +72,18 @@
    <p></p>
 
 <div class="container">
-    <div>
+<div class="jumbotron">
       <div class="panel panel-default">
 	<span class="label label-default" style="font-size:2em">Input Article</span>
 	<div class="panel-body">
 	  <span id="processed_input" class="output-text"></span>
 	</div>
       </div>
-    </div>
+</div>
 </div>
     <p></p>
 <div class="container">
-    <div>
+<div class="jumbotron">
       <div class="panel panel-default">
 	<span class="label label-default" style="font-size:2em">Selected Sentences</span>
 	<div class="panel-body">
@@ -91,19 +91,19 @@
 	  <span style="display:none;" id="system_1_ready" class = "output-text"></span>
 	</div>
       </div>
-        <p></p>
+</div>
+</div>
+<p></p>
+<div class="container">
+<div class="jumbotron">
       <div class="panel panel-default">
-	<span class="label label-default" style="font-size:2em">Human Summary</span>
+	<span class="label label-default" style="font-size:2em">Abstractive Summary</span>
 	<div class="panel-body">
 	  <span id="summary" class="output-text"></span>
 	  <span style="display:none;" id="system_2_ready" class = "output-text"></span>
 	</div>
       </div>
-      
-    </div>
-    
   </div>
-</div>
 </div>
 
 <!--<div id="footer">-->
